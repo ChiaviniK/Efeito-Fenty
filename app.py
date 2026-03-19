@@ -12,7 +12,8 @@ st.set_page_config(
 @st.cache_data
 def carregar_dados_shades():
     """Carrega o dataset real de tons de base (Hex codes e Luminosidade)."""
-    url_shades = "https://raw.githubusercontent.com/thepudding/data/master/foundation-names/allShades.csv"
+    # URL CORRIGIDA (com o hífen em the-pudding)
+    url_shades = "https://raw.githubusercontent.com/the-pudding/data/master/foundation-names/allShades.csv"
     try:
         df = pd.read_csv(url_shades)
         return df
@@ -23,7 +24,8 @@ def carregar_dados_shades():
 @st.cache_data
 def carregar_dados_numeros():
     """Carrega o dataset real que mapeia os números/nomes dos tons."""
-    url_numbers = "https://raw.githubusercontent.com/thepudding/data/master/foundation-names/allNumbers.csv"
+    # URL CORRIGIDA (com o hífen em the-pudding)
+    url_numbers = "https://raw.githubusercontent.com/the-pudding/data/master/foundation-names/allNumbers.csv"
     try:
         df = pd.read_csv(url_numbers)
         return df
